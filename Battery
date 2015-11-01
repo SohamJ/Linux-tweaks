@@ -1,0 +1,47 @@
+====================
+Know thy battery 
+====================
+
+1) /sys/class/power_supply/BAT0/
+
+cat or more the files for info
+
+capacity : shows current battery percentage
+
+capacity_level : See capacity level if its normal or not
+
+energy_full : maximum possible energy. Difference between energy_full and energy_full_design shows the reduction of battery's capacity
+
+energy_full_design : maximum possible energy per design 
+
+energy_now : current energy
+
+2)
+upower -i $(upower -e | grep BAT) | grep --color=never -E "state|to\ full|to\ empty|percentage"
+
+3)
+sudo apt-get install acpi
+
+acpi -V
+
+===============================
+Improve your battery life - TLP
+===============================
+
+1) Install TLP 
+
+sudo add-apt-repository ppa:linrunner/tlp
+sudo apt-get update
+sudo apt-get install tlp tlp-rdw
+sudo apt-get install tp-smapi-dkms acpi-call-dkms [ For thinkpads only ]
+
+2) Start TLP
+
+sudo tlp-start
+
+3) See tlp stats
+
+sudo tlp-stat
+
+	-b [ battery]
+	-c [
