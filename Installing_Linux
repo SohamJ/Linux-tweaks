@@ -1,0 +1,32 @@
+1) CREATING BOOTABLE USB
+
+Install/download unetbootin
+Format pendrive of size atleast 2 gb to fat32
+Download iso for the version you want
+open unetbootin
+select iso 
+select drive as your pendrive
+install OS on the pendrive
+
+2) DUAL BOOT SYSTEM
+
+Disable secure boot
+Disable fastboot
+
+3) CREATE A PARTITION
+
+From windows, use the disk utility
+Shrink an existing partition to the size you want ( think about swap space as well swap=Ramx1.5 if RAM>4 else swap = 2xRAM)
+
+4) SETUP
+
+Boot into the live usb
+Select the option to try ubuntu before installing, just to see if it is installed correctly
+Enter the setup, connect to wireless
+Do NOT enable updates during setup, it increases setup time
+Enable 3rd party codecs
+On the screen asking you to install ubuntu alongside windows/over windows etc, choose something else (the last option)
+You will see all your paritions in the table
+Check the partition corresponding to the size you allocated previously
+Delete the partition to get free space
+
