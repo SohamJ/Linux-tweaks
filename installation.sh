@@ -9,17 +9,16 @@ apt-get dist-upgrade
 
 
 #Java installation
-sudo add-apt-repository ppa:webupd8team/java
+sudo add-apt-repository ppa:openjdk-r/ppa
 sudo apt-get update
-sudo apt-get install oracle-java8-installer
-sudo apt-get install oracle-java8-set-default
-sudo apt-get install default-jre
+sudo apt-get install openjdk-7-jdk
+sudo apt-get install openjdk-7-jre
 
 #Android
 apt-get install git-core gnupg flex bison gperf build-essential \
   zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
   lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
-  libgl1-mesa-dev libxml2-utils xsltproc unzip python-lunch
+  libgl1-mesa-dev libxml2-utils xsltproc unzip python-lunch schedtool
 
 
 #ADB
