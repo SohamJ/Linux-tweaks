@@ -117,7 +117,15 @@ apt-get install numix-icon-theme-circle
 #Wine
 
 #youtube-dl
-sudo curl https://yt-dl.org/downloads/2016.05.30.2/youtube-dl -o /usr/local/bin/youtube-dl
+sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+
+#Add this to your bashrc and simply use download <URL> for mp3 format
+function download()
+{
+youtube-dl -x --audio-format mp3 $@
+}
+
 
 #always on top window - wmctrl -r :ACTIVE: -b toggle,above
 
