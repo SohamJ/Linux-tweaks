@@ -1,0 +1,23 @@
+
+Developing few shell functions that ease up my daily linux experience. Add these to ~/.bashrc and execute bashrc to use them ( . ~/.bashrc) 
+
+1. Android repo sync
+
+function syncc()
+{
+time repo sync --force-broken --force-sync --no-clone-bundle --quiet --current-branch $@
+}
+
+2. Youtube to mp3 download
+function download()
+{
+youtube-dl -x --audio-format mp3 $@
+}
+
+3. My favourite .. grep for stuff recursively, ignoring the case and also hidden directories
+function mygrep()
+{
+grep -i -r --exclude-dir=".*" $@
+}
+
+More to come.. making them as need comes up!
