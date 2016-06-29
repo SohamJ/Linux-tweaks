@@ -154,3 +154,7 @@ sudo cp 90-mouse.conf /usr/share/X11/xorg.conf.d/
 #Ubuntu Tweak
 wget http://archive.getdeb.net/ubuntu/pool/apps/u/ubuntu-tweak/ubuntu-tweak_0.8.7-1~getdeb2~xenial_all.deb
 sudo apt-get install -f
+
+#Qt5
+sudo apt-get install qt5-default
+
