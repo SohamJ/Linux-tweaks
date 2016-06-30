@@ -158,3 +158,7 @@ sudo apt-get install -f
 #Qt5
 sudo apt-get install qt5-default
 
+#Sox
+sudo apt-get install sox
+sudo apt-get install libsox-fmt-mp3
+
