@@ -29,3 +29,9 @@ function process()
 ps aux | grep $@
 }
 More to come.. making them as need comes up!
+
+5. Set java_home to jdk7
+function java7()
+{
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
+}
