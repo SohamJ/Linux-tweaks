@@ -162,3 +162,8 @@ sudo apt-get install qt5-default
 sudo apt-get install sox
 sudo apt-get install libsox-fmt-mp3
 
+#Pdf-chain
+sudo add-apt-repository ppa:pdfchain-team/ppa
+sudo apt-get update
+sudo apt-get install pdfchain
+
