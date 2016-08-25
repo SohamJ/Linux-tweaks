@@ -65,6 +65,9 @@ apt-get install gdebi gdebi-core
 #nemo
 apt-get install nemo
 
+#disable nautilus recursive search
+gsettings set org.gnome.nautilus.preferences enable-interactive-search true
+
 #VLC
 sudo apt-get install vlc
 #https://github.com/exebetche/vlsub/ download zip 
