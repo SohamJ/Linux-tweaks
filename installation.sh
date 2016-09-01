@@ -65,6 +65,9 @@ apt-get install gdebi gdebi-core
 #nemo
 apt-get install nemo
 
+#disable nautilus auto open on auto mount
+gsettings set org.gnome.desktop.media-handling automount-open false
+
 #disable nautilus recursive search
 gsettings set org.gnome.nautilus.preferences enable-interactive-search true
 
