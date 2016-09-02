@@ -65,6 +65,9 @@ apt-get install gdebi gdebi-core
 #nemo
 apt-get install nemo
 
+#disable nautilus auto open on auto mount
+gsettings set org.gnome.desktop.media-handling automount-open false
+
 #disable nautilus recursive search
 gsettings set org.gnome.nautilus.preferences enable-interactive-search true
 
@@ -171,3 +174,7 @@ sudo add-apt-repository ppa:pdfchain-team/ppa
 sudo apt-get update
 sudo apt-get install pdfchain
 
+#Arc Theme
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' >> /etc/apt/sources.list.d/arc-theme.list"
+sudo apt-get update
+sudo apt-get install arc-theme
