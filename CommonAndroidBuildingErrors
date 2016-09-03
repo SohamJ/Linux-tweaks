@@ -1,0 +1,9 @@
+
+This is just a dump of all the errors developers come across while building roms and their solutions.
+
+
+
+1. SystemUI battery drain 
+Sol: Dont use GCC optimization (pipe optimization)
+
+
