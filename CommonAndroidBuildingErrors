@@ -2,8 +2,18 @@
 This is just a dump of all the errors developers come across while building roms and their solutions.
 
 
+-------------------------------------------------------------------------------------------------------
 
 1. SystemUI battery drain 
-Sol: Dont use GCC optimization (pipe optimization)
+Sol: 
+Dont use GCC optimization (pipe optimization)
 
+-------------------------------------------------------------------------------------------------------
 
+2. Make CONFIG_ON_ERROR_MISMATCH_ERROR=y
+Sol: 
+Revert this - https://github.com/CyanogenMod/android_kernel_motorola_msm8226/commit/47c9e96995ba9c14c0e0a17ce358f14f62526952
+OR 
+use androideabi toolchain
+
+-------------------------------------------------------------------------------------------------------
