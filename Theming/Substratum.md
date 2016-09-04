@@ -22,7 +22,8 @@ Cool, let's get started..
 
 (Key : AS = Android Studio)
 
- ## Some prior things ##
+## Some prior things ##
+
 Some things you'll need to check/install before you start with theming:
 
 1. Android SDK
@@ -72,7 +73,7 @@ To understand what these options are, head over to the overlays/android folder. 
 *Note* : You'll see 3 files in the overlays/android folder - type1a, type1b, type1c (no extensions). These files hold the names "Primary", "Accent" and "Background".
 
 
- ##### Type1 #####
+##### Type1 #####
 
   This option allows us to hotswap a file over the existing one in the app. The resources present in the type1 files (a,b,c) hotswap those values in res/values of an application.
 
