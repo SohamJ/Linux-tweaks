@@ -13,7 +13,7 @@ Special thanks to these folks for helping me out on theming:
 
 * Sri Harsha
 * Jimmy Setiawan
-* Dave Kessler
+* David Wilson
 * Syko Pompos
 * Nicholas Chum
 
