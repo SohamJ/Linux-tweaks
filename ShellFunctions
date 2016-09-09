@@ -41,3 +41,11 @@ function batinfo()
 {
 upower -i /org/freedesktop/UPower/devices/battery_BAT0
 }
+
+7. Aapt dump of apk resources
+Usage - reslist Settings.apk
+function reslist()
+{
+aapt dump --values resources $@
+}
+
