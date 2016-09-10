@@ -95,3 +95,22 @@ This file holds 2 values: "holo_purple" and "background_dark". Background_dark i
 ![Magpie Android spinners](https://github.com/SohamJ/Linux-Tweaks/raw/master/Theming/images/01.png "Type1")
 
 Adding type1 files will add entries in the respective spinners.
+
+##### Type 2 and 3 #####
+
+Both type2 and type3 overlays are folders.
+
+Let's start with type 3. Type3 is a completely different entity. It includes the complete res folder (everything - values (attributes, bools, colors, strings) and drawables).
+So something like Gradient or Translucent in Magpie is an example of type3 overlay.
+
+If you include the type3 overlay in your theme, you need to add the type3_{name} folder in every app that you theme (meaning every folder present in the overlay directory will have a type3 folder). The type3 spinner should come at the very top of the overlay list (BaseDark in the image above).
+
+Type2 is an extension to type3 and this allows you to add some stuff instead of the whole res folder. This however can't modify attributes. Type2 can be used for custom icons or card styles, notification styles.. anything that you want to have multiple options for. Type2 is the 4th spinner if we add all 3 types of type1 overlays. (More Options in the image above).
+
+The main difference in type2 and type3 is that type2 is independent of the framework. It is a separate bundle of resources that you can theme without the need of using framework resources. Type3 is dependent on framework.
+
+### To-do ###
+
+* Anti piracy
+* Hero image
+* My approach to theming an app
