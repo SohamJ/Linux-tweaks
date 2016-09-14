@@ -9,10 +9,16 @@
 #This script is only for changing the fill color. Background/transparency changes have different commands that
 # you can check in man
 
+if [[ "$#" -lt 4 ]]; then
+    echo "Illegal number of parameters"
+    echo "Usage : ./colorize.sh <path> <filename> <Color you want in hex> <Current color in hex> <fuzzvalue>"
+    exit 1
+fi
+
 foldername=$1
 filename=$(echo $2)
 
-if [ $5 == "" ]; then
+if [[ $5 == "" ]]; then
 	fuzz=40
 else
 	fuzz=$(echo $5)
