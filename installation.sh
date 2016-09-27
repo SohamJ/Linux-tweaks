@@ -21,6 +21,8 @@ apt-get install git-core gnupg flex bison gperf build-essential \
   libgl1-mesa-dev libxml2-utils xsltproc unzip python-lunch schedtool \
   aapt zipalign
 
+#Git
+git config --global credential.helper 'cache --timeout=36000'
 
 #ADB
 sudo apt-get install android-tools-adb android-tools-fastboot
