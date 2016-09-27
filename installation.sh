@@ -101,6 +101,7 @@ sudo ldconfig
 sudo ln -frs /usr/lib/x86_64-linux-gnu/libavutil.so.52.6.100 /usr/lib/x86_64-linux-gnu/libavutil.so.52
 sudo ln -frs /usr/lib/x86_64-linux-gnu/libavformat.so.54.36.100 /usr/lib/x86_64-linux-gnu/libavformat.so.54
 sudo ln -frs /usr/lib/x86_64-linux-gnu/libavcodec.so.54.71.100 /usr/lib/x86_64-linux-gnu/libavcodec.so.54
+sudo rm -rf ~/spotify-libraries
 #Dropbox 
 
 #Eclipse Atom
@@ -110,7 +111,8 @@ sudo apt-get install eclipse-cdt
 sudo snap install telegram-sergiusens
 
 #Shutter RedShift
-
+sudo apt-get install redshift
+sudo apt-get install shutter
 #TeamViewer
 
 #Gnome
@@ -146,8 +148,6 @@ sudo cp /etc/lsb-release.backup /etc/lsb-release
 sudo add-apt-repository ppa:linrunner/tlp
 sudo apt-get update
 sudo apt-get install tlp tlp-rdw
-
-#Shutter
 
 #WiFi drivers rtl
 git clone http://github.com/lwfinger/rtlwifi_new.git
