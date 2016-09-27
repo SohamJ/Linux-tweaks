@@ -183,3 +183,6 @@ sudo apt-get install arc-theme
 
 #Gprename
 sudo apt-get install gprename
+
+#Inkscape
+sudo apt-get install inkscape
