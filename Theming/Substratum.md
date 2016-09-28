@@ -109,8 +109,53 @@ Type2 is an extension to type3 and this allows you to add some stuff instead of 
 
 The main difference in type2 and type3 is that type2 is independent of the framework. It is a separate bundle of resources that you can theme without the need of using framework resources. Type3 is dependent on framework.
 
+### Approach ###
+
+* Decompile the app you want to theme using apktool (apktool d app.apk).
+
+* Open AndroidManifest.xml and copy the packagename (eg. com.android.google.keep).
+
+* Create a directory in overlay folder (src/main/assets/overlay) with the same name as that of the package name.
+
+* Create a res folder. This will house all the overlay stuff.
+
+#### Colors ####
+
+* Start with values/colors.xml. What I do is copy the colors.xml from the app to the overlay folder and edit every resource.
+
+*Note :*
+    1. You can either use hardcoded colors (e.g. #ffffff or #6f33b5e5, where 6f denotes transparency) or use @android:color/xyz (e.g. @android:color/holo_blue_dark , @android:color/background_dark etc.).
+
+    2. DO NOT keep any instances of @color, @dimen in the resources. This will lead to ResourceNotFoundExceptions.
+
+    3. If you are modifying arrays, add all the entries in an array even if you are modifying a few of them.
+
+ * Check if there are colors.xml in values-v(11-24) and follow the same approach.
+
+#### Color and Drawable
+
+*Note :*
+  My approach for these folders is to find xml files that have either hardcoded values or @android:color values. You can check my [grep](https://github.com/SohamJ/Linux-tweaks/blob/master/Scripts/copygrepfiles.sh) script that copies all files with patterns such as "#" and "android:color" to the overlay directory. There you can edit the values.
+
+  * Check if the app has color directory. This usually has text colors that you can change if your theme is dark.
+
+  * Modify vector drawables that are hardcoded.
+
+  * Png's are a pain, for you need to batch color them (especially for a dark theme). Use my [batch color](https://github.com/SohamJ/Linux-tweaks/blob/master/Scripts/colorize.sh) script to color pngs.
+
+  *Note:* Do not use the script for .9.png, you need to manually edit them.
+
+#### Styles ####
+
+ You can refer this [guide](https://plus.google.com/+StefanoTrevisani/posts/gJCQGVE39SL) (Credits Stefano) about styles.
+  * Following similar approach as of colors, I look for instances of hardcoded colors and @android:color. I copy over the styles having these and modify the values.
+
+* If there are references to a drawable, add those in /res/drawable. I replace references to @dimen with their actual value defined in dimens.xml.
+
+* For styles, you need to add the parent of the style until the parent is a android:style (that's defined in framework).
+
+
 ### To-do ###
 
 * Anti piracy
 * Hero image
-* My approach to theming an app
