@@ -1,4 +1,4 @@
-#Script to automate new Ubuntu install 
+#Script to automate new Ubuntu install
 
 #get superuser perms
 sudo -s
@@ -54,7 +54,7 @@ chmod a+x ~/bin/repo
 
 #Disable apport - /etc/default/apport -> enable=0
 
-#ubuntu restricted extras 
+#ubuntu restricted extras
 apt-get install ubuntu-restricted-extras
 
 # Softwares
@@ -75,7 +75,7 @@ gsettings set org.gnome.nautilus.preferences enable-interactive-search true
 
 #VLC
 sudo apt-get install vlc
-#https://github.com/exebetche/vlsub/ download zip 
+#https://github.com/exebetche/vlsub/ download zip
 sudo cp vlsub.lua /usr/lib/vlc/lua/extensions/
 
 #Skype
@@ -104,7 +104,7 @@ sudo ln -frs /usr/lib/x86_64-linux-gnu/libavutil.so.52.6.100 /usr/lib/x86_64-lin
 sudo ln -frs /usr/lib/x86_64-linux-gnu/libavformat.so.54.36.100 /usr/lib/x86_64-linux-gnu/libavformat.so.54
 sudo ln -frs /usr/lib/x86_64-linux-gnu/libavcodec.so.54.71.100 /usr/lib/x86_64-linux-gnu/libavcodec.so.54
 sudo rm -rf ~/spotify-libraries
-#Dropbox 
+#Dropbox
 
 #Eclipse Atom
 sudo apt-get install eclipse-cdt
@@ -112,9 +112,13 @@ sudo apt-get install eclipse-cdt
 #Telegram
 sudo snap install telegram-sergiusens
 
-#Shutter RedShift
+#RedShift
 sudo apt-get install redshift
+sudo apt-get install geoclue-2.0
+
+#Shutter
 sudo apt-get install shutter
+
 #TeamViewer
 
 #Gnome
@@ -126,6 +130,7 @@ apt-get install numix-icon-theme-circle
 #Steam
 
 #Wine
+sudo apt-get install wine
 
 #youtube-dl
 sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
