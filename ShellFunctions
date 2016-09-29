@@ -1,32 +1,32 @@
 
-Developing few shell functions that ease up my daily linux experience. Add these to ~/.bashrc and execute bashrc to use them ( . ~/.bashrc) 
+Developing few shell functions that ease up my daily linux experience. Add these to ~/.bashrc and execute bashrc to use them ( . ~/.bashrc)
 
 1. Android repo sync
 Usage - syncc
 function syncc()
 {
-time repo sync --force-broken --force-sync --no-clone-bundle --quiet --current-branch $@
+time repo sync --force-broken --force-sync --no-clone-bundle --quiet --current-branch "$@"
 }
 
 2. Youtube to mp3 download
 Usage - download <youtube url>
 function download()
 {
-youtube-dl -x --audio-format mp3 $@
+youtube-dl -x --audio-format mp3 "$@"
 }
 
 3. My favourite .. grep for stuff recursively, ignoring the case and also hidden directories
 Usage - mygrep <string>
 function mygrep()
 {
-grep -i -r --exclude-dir=".*" $@
+grep -i -r --exclude-dir=".*" "$@"
 }
 
 4. Find a running process
 Usage - process <process name>
 function process()
 {
-ps aux | grep $@
+ps aux | grep "$@"
 }
 More to come.. making them as need comes up!
 
@@ -46,6 +46,6 @@ upower -i /org/freedesktop/UPower/devices/battery_BAT0
 Usage - reslist Settings.apk
 function reslist()
 {
-aapt dump --values resources $@
+aapt dump --values resources "$@"
 }
 
