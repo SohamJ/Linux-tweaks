@@ -161,6 +161,7 @@ git clone http://github.com/lwfinger/rtlwifi_new.git
 cd rtlwifi_new
 make
 sudo make install
+echo "options rtl8723be fwlps=N ips=N" | sudo tee /etc/modprobe.d/rtl8723be.conf
 
 #mouse acceleration
 sudo cp 90-mouse.conf /usr/share/X11/xorg.conf.d/
