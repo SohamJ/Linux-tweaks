@@ -12,3 +12,11 @@ alias croot='cd /home/soham/'
 alias unlock="sudo rm /var/lib/dpkg/lock"
 alias wifi="sudo service network-manager restart"
 alias parted="sudo parted /dev/sdb unit s print"
+
+3. Paths and Env. variables
+export USE_CCACHE=1
+export ANDROID_HOME=/home/soham/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/build-tools:$ANDROID_HOME/build-tools
+export PATH=$PATH:/home/soham/orion/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin
+export PATH=$PATH:~/Linux-tweaks/Scripts
