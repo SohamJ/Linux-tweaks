@@ -135,6 +135,7 @@ sudo apt-get install wine
 #youtube-dl
 sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 sudo chmod a+rx /usr/local/bin/youtube-dl
+sudo apt-get install -y libav-tools
 
 #Add this to your bashrc and simply use download <URL> for mp3 format
 function download()
