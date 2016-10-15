@@ -143,6 +143,8 @@ function download()
 youtube-dl -x --audio-format mp3 $@
 }
 
+#EasyTag
+sudo apt-get install easytag
 
 #always on top window - wmctrl -r :ACTIVE: -b toggle,above
 
