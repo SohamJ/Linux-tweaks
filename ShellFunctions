@@ -74,7 +74,12 @@ sudo modprobe -r rtl8723be && sudo modprobe rtl8723be
 
 11. Increase jack heap
 function heapify() {
-JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4g"
+JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx"$@"g"
 ./prebuilts/sdk/tools/jack-admin kill-server
 ./prebuilts/sdk/tools/jack-admin start-server
+}
+
+12. Find duplicate entries in a android xml file
+function duplicate() {
+gawk  -F '"'  '/name=/ { print $2 }' $@  | sort | uniq -d
 }
