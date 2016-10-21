@@ -49,4 +49,4 @@ The main part of the setup.
 
 * That's it.. install and reboot. Remove the pendrive
 
-__ If there's any issue with the setup, boot into live usb and install the software boot-repair to solve issues with grub __
+__If there's any issue with the setup, boot into live usb and install the software boot-repair to solve issues with grub__
