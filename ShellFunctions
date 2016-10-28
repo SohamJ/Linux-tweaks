@@ -88,3 +88,10 @@ gawk  -F '"'  '/name=/ { print $2 }' $@  | sort | uniq -d
 function whatsnew() {
  comm -13 <(gawk  -F '"'  '/name=/ { print $2 }' $1 | sort) <( gawk  -F '"'  '/name=/ { print $2 }' $2 | sort)
 }
+
+14. Remove dpkg lock
+function unlock() {
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+sudo dpkg --configure -a
+}
