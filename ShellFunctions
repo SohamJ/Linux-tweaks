@@ -86,7 +86,7 @@ gawk  -F '"'  '/name=/ { print $2 }' $@  | sort | uniq -d
 
 13. Find updated entries in an android xml file
 function whatsnew() {
- comm -13 <(gawk  -F '"'  '/name=/ { print $2 }' $1 | sort) <( gawk  -F '"'  '/name=/ { print $2 }' $2 | sort)
+ comm -13 <(gawk  -F '"'  '/name=/ { print $2 }' "$1" | sort) <( gawk  -F '"'  '/name=/ { print $2 }' "$2" | sort)
 }
 
 14. Remove dpkg lock
