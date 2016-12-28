@@ -1,5 +1,5 @@
 ###1. Highlight/Show trailing whitespaces in vi###
-   * highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+   * **highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen**
    * Show trailing whitespace using **match ExtraWhitespace /\s\+$/**
    * Show trailing whitespace and spaces before a tab **match ExtraWhitespace /\s\+$\| \+\ze\t/**
    * Show tabs that are not at the start of a line **match ExtraWhitespace /[^\t]\zs\t\+/**
