@@ -25,6 +25,9 @@ yaourt -S chromium-pepper-flash
 __Spotify__
 yaourt spotify
 
+__ADB__
+pacman -S community/android-tools
+
 sudo ln -s /usr/lib/libnss3.so /usr/lib/libnss3.so.1d && 
 sudo ln -s /usr/lib/libnssutil3.so /usr/lib/libnssutil3.so.1d && 
 sudo ln -s /usr/lib/libsmime3.so /usr/lib/libsmime3.so.1d && 
