@@ -14,6 +14,9 @@ sudo pacman -S bash-completion
 __iwconfig__
 pacman -S wireless_tools
 
+__pacaur__
+Refer [this](https://gist.github.com/Tadly/0e65d30f279a34c33e9b)
+
 ### 3rd Party Packages ###
 
 __Chrome__
