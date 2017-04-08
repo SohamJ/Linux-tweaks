@@ -11,8 +11,10 @@ sudo pacman -S bash-completion
 
 ### System tools/softwares ###
 
-__iwconfig__
+__Network__
 pacman -S wireless_tools
+
+sudo pacman -S extra/nmap
 
 __pacaur__
 Refer [this](https://gist.github.com/Tadly/0e65d30f279a34c33e9b)
